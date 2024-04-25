@@ -4,11 +4,11 @@
     i = inicio;
     j = fim;
     pivo = V[(inicio + fim) / 2];
-    while(i <= j){ 
-        while(V[i] < pivo){ 
+    while(i <= j){  //  O(n)
+        while(V[i] < pivo){  //O(n)
             i++;
         }
-        while(V[j] > pivo){
+        while(V[j] > pivo){ //O(n)
             j--;
         }
         if(i <= j){
